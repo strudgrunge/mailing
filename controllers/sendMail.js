@@ -6,8 +6,8 @@ exports.sendMail = (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'rurosurunironin1@gmail.com',
-            pass: 'potiynyuodeyhirw',
+            user: 'mailing.service.jv@gmail.com',
+            pass: 'fqjaydaxzzsjwwgq',
         },
     });
     transporter.sendMail({
