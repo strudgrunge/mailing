@@ -15,7 +15,9 @@ exports.sendMail = (req, res) => {
         to: "sergiomusri@gmail.com", // list of receivers
         subject: `Mensaje de: ${req.body.name}`, // Subject line
         html: `<h5>Asunto: ${req.body.subject} </h5>
-        <h5> Mail: ${req.body.email}</h5>`, // html body
+        <h5> Mail: ${req.body.email}</h5>
+        <p>${req.body.message}</p>
+        `, // html body
         text: req.body.message, // plain text body
     }).then(info => {
         console.log({ info });
