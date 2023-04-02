@@ -13,8 +13,9 @@ exports.sendMail = (req, res) => {
     transporter.sendMail({
         from: `Consultas SM Seguridad - ${req.body.email}`, // sender address
         to: "sergiomusri@gmail.com", // list of receivers
-        subject: `Mensaje de ${req.body.name}: ${req.body.subject} 
-        Mail: ${req.body.email}
+        subject: `<h4>Mensaje de: ${req.body.name}</h4>
+        <h5>Nombre: ${req.body.subject} </h5>
+        <h5> Mail: ${req.body.email}</h5>
         `, // Subject line
         text: req.body.message, // plain text body
         // html: "<b>There is a new article. It's about sending emails, check it out!</b>", // html body
