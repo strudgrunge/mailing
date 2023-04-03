@@ -12,7 +12,7 @@ exports.sendMail = (req, res) => {
     });
     transporter.sendMail({
         from: `Consultas SM Seguridad - ${req.body.email}`, // sender address
-        to: "sergiomusri@gmail.com", // list of receivers
+        to: "smseguridadcba@gmail.com", // list of receivers
         subject: `Mensaje de: ${req.body.name}`, // Subject line
         html: `<h5>Asunto: ${req.body.subject} </h5>
         <h5> Mail: ${req.body.email}</h5>
